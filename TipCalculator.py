@@ -19,5 +19,3 @@ total_bill = bill + tip
 individual_bill = total_bill / people
 
 print(f'Each person should pay ${round(individual_bill, 2)}')
-
-
