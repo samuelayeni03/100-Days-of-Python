@@ -11,4 +11,3 @@ pet = input()
 
 #4 combine the name of their city and pet and show their band name...
 print('Your band name is ' + city +  " " + pet)
-
