@@ -32,11 +32,10 @@ while True:
         break
 
 highest_bid = 0
-bidder = ""
+winner = ""
 for bidders in auction_bids:
     if auction_bids[bidders] > highest_bid:
         highest_bid = auction_bids[bidders]
+    winner = bidders
 
-    bidder = next((k for k, v in auction_bids.items() if v == highest_bid), None)
-
-print(f"The highest bidder is {bidder.title()} with a bid of ${round(highest_bid, 2)}")
+print(f"The highest bidder is {winner.title()} with a bid of ${round(highest_bid, 2)}")
